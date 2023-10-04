@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin: 0%;
+            background-color:black;
+        }
+        
+        .topnav{
+            display: flex;
+        background-image: url("bb3.jpg");
+            gap: 40px;
+            padding: 10px;
+            border-bottom: 5px solid #4eb060;
+        }
+        .navv{
+            padding-top: 40px;
+            gap: 40px;
+        }
+        .navv a {
+            text-decoration: none;
+            padding-left: 20px;
+            font-weight: bolder;
+            color: white;
+        }
+        .s a {
+            text-decoration: none;
+            padding-right: 20px;
+            font-weight:bolder;
+            color: white;
+        }
+        .pro{
+            background-color:black;
+            width: fit-content;
+            border: 25px;
+            border: 1px solid #4eb060;
+
+        }
+        .pro h2{
+                text-align: center;
+                align-items: center;
+                padding-top: 20px;
+                color: white;
+        }
+        .iml{
+            display: flex;
+            padding-left: 50px;
+            padding: 20px;
+            animation: ani 3s linear infinite;
+
+        }
+        .iml a{
+            padding:0px 50px 0px 32px;
+        }
+        .whole{
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        footer{
+    background-color: #1b1d1f;
+    padding: 50px 20px;
+    border-top: 5px solid #4eb060;
+}
+.footer-container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo a{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-logo a span{
+    color: #4eb060;
+}
+.footer-social{
+    display: flex;
+    margin-top: 10px;
+}
+.footer-social a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #ffffff15;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: all ease 0.3s;
+}
+.footer-social a:hover{
+    background-color: #4eb060;
+    transition: all ease 0.3s;
+}
+.footer-links strong{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footer-links ul{
+    margin-top: 10px;
+}
+.footer-links ul li a{
+    color: #ffffff;
+    opacity: 0.5;
+    margin: 4px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+.footer-links li a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+@keyframes glow {
+        0%{
+        box-shadow: 5px 5px 20px white,-5px -5px 20px 
+        lightgreen;
+    }
+    50%{
+        box-shadow: 10px 10px 20px green,-5px -5px 20px 
+        lightgreen;
+    }
+    100%{
+        box-shadow: 10px 10 px 20px green,-5px -5px 20px 
+        lightgreen;
+    }        
+    }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="navv" style="gap: 30px;">
+            <a href="" style="gap: 30px;">Home</a>
+            <a href="">Cart</a>
+            <a href="">Deals</a>
+            <a href="contact.jsp">Contact</a>
+        </div>
+        <h1 style="padding-left:300px; padding-right: 360px; color: white;">A World Of Groceries</h1>
+        <div class="s" style="padding-top:40px;">
+            <a href="login.html" style="padding-top: 40px;">Sign In</a>
+            <a href="register.html">Sign Up</a>
+        </div>
+        
+    </div>
+    <br>
+    <img src="offer1.jpg" >
+    <div class="whole">
+                <div class="pro">
+                    <h2> TOP PICKS</h1>
+                        <div class="iml">
+                            <a href="login.html" style="padding-left: 50px;"><img src="i1.jpg" height="150" width="150"  style="animation:glow 2000s linear infinite"></a>
+                            <a href="login.html"><img src="i2.jpg" height="150" width="150" style="animation:glow 2000s linear infinite"></a>
+                            <a href="login.html"><img src="i3.jpg" height="150" width="150"  style="animation:glow 2000s linear infinite"></a>
+                            <a href="login.html"><img src="i4.jpg" height="150" width="150"  style="animation:glow 2000s linear infinite"></a>
+                            <a href="login.html"><img src="i5.jpg" height="150" width="150"  style="animation:glow 2000s linear infinite"></a>
+                            <a href="login.html"><img src="i6.jpg" height="150" width="150"  style="animation:glow 2000s linear infinite"></a>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                                    <img src="t1.jpg" width="1460">
+
+                    <br>
+                    <br>
+                    <div class="pro" style="padding-bottom: 20px;">
+                        <h2> TOP BRANDS</h1>
+                            <div class="iml">
+                                <a href="" style="padding-left: 50px;"><img src="b1.jpg" height="150" width="150"></a>
+                                <a href=""><img src="b2.jpg" height="150" width="150"></a>
+                                <a href=""><img src="b3.jpg" height="150" width="150"></a>
+                                <a href=""><img src="b4.jpg" height="150" width="150"></a>
+                                <a href=""><img src="b5.jpg" height="150" width="150"></a>
+                                <a href=""><img src="b6.jpg" height="150" width="150"></a>
+                                
+                            </div>
+                    </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" style="text-decoration: none;"><span>e</span> - Grocery</a>
+                <div class="footer-social">
+                   <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+            
+        <div class="footer-links">
+            <strong>Product</strong>
+            <ul>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">New</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <strong>Category</strong>
+            <ul>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Meats</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Clothes</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <strong>Contact</strong>
+            <ul>
+                <li><a href="#">Phone : +123456789</a></li>
+                <li><a href="#">Email : Example@gmail.com</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+</body>
+</html>
