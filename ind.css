@@ -1,0 +1,92 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30-Aug-2023, 4:41:41 pm
+    Author     : Abi Kingston
+*/
+.head{
+        background-color: black;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        border-radius: 25px;
+        color: aliceblue;
+        margin: 10px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-left: 650px;
+        display: flex;
+        animation:glow 2000s linear infinite;
+    }
+    body{
+        margin: 0px;
+        background-image: url("IMG_20230827_164809.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    @keyframes glow {
+        0%{
+        box-shadow: 10px 10px 20px rgb(238, 178, 11),-5px -5px 20px 
+        rgb(255, 90, 87);
+    }
+    50%{
+        box-shadow: 10px 10px 20px rgb(255, 147, 5),-5px -5px 20px 
+        rgb(16, 238, 34);
+    }
+    100%{
+        box-shadow: 10px 10 px 20px greenyellow,-5px -5px 20px 
+        aqua;
+    }        
+    }
+    .top{
+        padding-top: 100px;
+        padding-left: 600px;
+        align-items: center;
+        text-align: center;
+        opacity:1;
+        display: flex;
+        border-radius: 25px;
+        background-color: transparent   ;
+    }
+    .a2{
+        background-color:transparent;
+        align-items: center;
+        color:white;
+        max-width: 300px;
+        text-align: center;
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom:50px ;
+        border-radius: 25px;
+        animation: glow 2000s linear infinite;
+        text-decoration: solid;
+        font-weight: bolder;
+    }
+    @media only screen and (max-width: 987px){
+    .top{
+        padding-left: 100px;
+    }
+    .a2{
+        width: fit-content  ;
+    }
+    .head{
+        padding-left:100px ;
+
+   }
+}
+  
+@media only screen and (max-width: 768px){
+    
+   .top{
+       width:fit-content;
+   }.head{
+    padding-left: 100px;
+
+   }
+  
+}
+

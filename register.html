@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .head{
+        background-image: url("bb3.jpg");
+        text-align: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        border-radius: 25px;
+        color: aliceblue;
+        margin: 10px;
+        padding-top: 10px;
+        padding-left:640px;
+        display: flex;
+        animation:glow 2000s linear infinite;
+    }
+    body{
+        margin: 0px;
+        background-image: url("bb3.jpg");
+            background-attachment: fixed;
+        background-size: cover;
+    }
+    @keyframes glow {
+        0%{
+        box-shadow: 10px 10px 20px white,-5px -5px 20px 
+        lightgreen;
+    }
+    50%{
+         box-shadow: 10px 10px 20px green,-5px -5px 20px 
+        lightgreen;
+    }
+    100%{
+        box-shadow: 10px 10px 20px green,-5px -5px 20px 
+        lightgreen;
+    }        
+    }
+    .top{
+        padding-top: 100px;
+        padding-left: 560px;
+        padding-bottom: 100px;
+        align-items: center;
+        text-align: center;
+        opacity:1;
+        display: flex;
+        border-radius: 25px;
+    }
+    .a2{
+        background-color:transparent;
+        align-items: center;
+        color:white;
+        max-width: 500px;
+        text-align: center;
+        padding-top: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom:50px ;
+        border-radius: 25px;
+        animation: glow 2000s linear infinite;
+        text-decoration: solid;
+        font-weight: bolder;
+    }
+    @media only screen and (max-width: 987px){
+    .top{
+        padding-left: 100px;
+    }
+    .a2{
+        width: fit-content  ;
+    }
+    .head{
+        padding-left:100px ;
+
+   }
+}
+  
+@media only screen and (max-width: 768px){
+    
+   .top{
+       width:fit-content;
+   }.head{
+    padding-left: 100px;
+
+   }
+  
+}
+footer{
+        background-image: url("bb3.jpg");
+    padding: 50px 20px;
+    border-top: 5px solid #4eb060;
+}
+.footer-container{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo a{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-logo a span{
+    color: #4eb060;
+}
+.footer-social{
+    display: flex;
+    margin-top: 10px;
+}
+.footer-social a{
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #ffffff15;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: all ease 0.3s;
+}
+.footer-social a:hover{
+    background-color: #4eb060;
+    transition: all ease 0.3s;
+}
+.footer-links strong{
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footer-links ul{
+    margin-top: 10px;
+}
+.footer-links ul li a{
+    color: #ffffff;
+    opacity: 0.5;
+    margin: 4px 0px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+.footer-links li a:hover{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+</style>
+    <div class="head">
+        <h1>DKJ GROCERIES</h1>
+        
+    </div>
+    <div class="top">
+        <div class="a2">
+        <form action="regi.jsp" method="post" onsubmit="return submit();">
+            <label id="demo" for="name" >&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;UserName :</label>
+            <input type="text" id="name" name="name" onclick="set()" value="">
+            <br>
+            <br>
+            <label id="demo" for="name" >&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;Email:</label>
+            <input type="text" id="pass" name="e" onclick="set()" value="">
+            <br>
+            <br>
+            <label id="d1" >&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;&emsp13;Password : </label>
+            <input type="password" id="pa" name="p" value="">
+            <br>
+            <br>
+            <label id="d1" >&emsp13;Confirm Password : </label>
+            <input type="password" id="p" name="pp" value="">
+            <br>
+            <br>
+            <button type="button" onclick="submit()" class="button" style="color:white; 
+            background-color:transparent;border-radius: 25px; padding: 5px 10px; font-style:italic; border-color: aliceblue;">
+                Submit
+            </button>
+            <br>
+            <br>
+            <a href="login.html" style="color: white;">Sign In</a>
+            <p id="f" style="color:rgb(255, 255, 255);"></p>
+        </div>
+    </div>
+<footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#" style="text-decoration: none;"><span>e</span> - Grocery</a>
+                <div class="footer-social">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+            
+        <div class="footer-links">
+            <strong>Product</strong>
+            <ul>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">New</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <strong>Category</strong>
+            <ul>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Meats</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Clothes</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <strong>Contact</strong>
+            <ul>
+                <li><a href="#">Phone : +91 9865053535</a></li>
+                <li><a href="#">Email : ddgroceries@gmail.com</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+    <script src="regi.js"></script>
+</html>
